@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texter</title>
+
+</head>
+<style>
+    
+</style>
+<body>
+    <div>
+        <h1>write your name for magic</h1>
+        <input type="text" id="inp">
+        <button onclick="res()">enter</button>
+        <h2><p id="out"></p></h2>
+    </div>
+    <script>
+        function res() {
+            let name= document.getElementById("inp").value || "there";
+            document.getElementById("out").textContent=`i love you,${name}`
+            setTimeout(()=>{
+                alert(`congrats for this ,${name}`)
+            },1000)
+            
+        }
+    </script>
+</body>
+</html>

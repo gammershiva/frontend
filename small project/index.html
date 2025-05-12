@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colour changer</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+</style>
+<body>
+    <div class="main">
+        <button onclick="changecolour('red')">red</button>
+        <button  onclick="changecolour('blue')"> blue</button>
+        <button  onclick="changecolour('green')">green</button>
+        <button  onclick="changecolour('white')">def</button>
+    </div>
+    <script>
+        function changecolour(colour) {
+            document.body.style.backgroundColor=colour
+            
+        }
+    </script>
+</body>
+</html>
