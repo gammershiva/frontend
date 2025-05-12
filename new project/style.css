@@ -1,0 +1,49 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: blue;
+    background-image: url(/img/6610353.jpg );
+    width:100% ;
+    background-size: contain;
+ 
+ 
+ 
+   
+}
+
+.logo{
+    color: red;
+    font-family: cursive;
+    font-size: 5rem;
+
+}
+.last{
+    color:crimson;
+    font-family: cursive;
+
+
+}
+nav ul{
+    
+    font-size: large;
+    padding-top: 50px;
+    display: flex;
+    justify-content: end;
+    gap: 5rem;
+    list-style: none;
+}
+nav ul a{
+    color: whitesmoke;
+  font-weight: bolder;
+    text-decoration: none;
+}
+nav ul a:hover{
+    color: black;
+    text-decoration: underline;
+}

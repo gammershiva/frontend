@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding:0px ;
+}
+
+
+
+.king{
+    background-color: blue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: brown;
+font-size: 50px;
+font-family:cursive;
+
+}
+.last{
+    color: red;
+    font-family:cursive;
+}
+nav ul{
+    display: flex;
+    gap: 5rem;
+    justify-content:end;
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: aqua;
+    font-weight: bolder;
+
+}
+nav a:hover{
+    color: black;
+    text-decoration:underline;
+
+}
+.b img{
+    width: 100%;
+
+}
+.b{
+    width:100%rem;
+}
+.about{
+    position: absolute;
+    color:red;
+    top: 40%;
+    left: 80%;
+    font-size: 30px;
+}
+.about h1{
+    font-size: medium;
+   
+    
+}
+.section3{
+    height:400px ;
+    width:100% ;
+  
+
+    
+}
+.SKILL{
+    background-image: url(/img/Madara\ uchiha\ tshirt\ design\ -\ DABELYU\ STD.jpg);
+    height:150px ;
+    margin: 0px;
+}
+
+.he{
+    font-size: 100px;
+    text-align: center;
+  font-family:'monotype corsiva', 'Arial Narrow', Arial, sans-serif;
+font-style: italic;
+text-decoration: underline;
+
+}
+.card{
+    width: 400px;
+    background: red;
+    border: 10px ;
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px black;
+    margin: 2rem;
+    transition: transform 0.5s ease;
+    
+}
+.card:hover{
+    transform: translateY(-50px);
+}
+.la{
+    width:100% ;
+    background-color: aqua;
+    padding:2rem ;
+}
+.pl{
+    padding: 4px;
+    margin:auto;
+    width: 600PX;
+    margin: auto;
+    box-shadow: 0 10px 25px gold;
+    padding: 2rem,;
+    background-color: white;
+    border-radius: 15px;
+
+}
+.formc{
+    color:red;
+   margin:1rem;
+   font-size:2rem ;
+}
+.butt{
+    padding: 0.75rem 1.5rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.butt:hover{
+    background-color: aqua;
+    color: red;
+}
+footer{
+    background-color: darkgrey;
+    text-align: center;
+   
+   
+}
+.ss{
+    padding: 100px;
+}
+footer:visited{
+    color: black;
+    background-color: brown;
+    margin: 5em;
+    padding: 100px;
+}
+.maindiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.div3 ul a{
+color: rgb(106, 87, 11);
+}

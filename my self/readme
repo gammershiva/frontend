@@ -1,0 +1,9 @@
+* is used to select all thing of html </div>
+    <!-- <p id="demo" style="display: none; color: red;">yourt form is summited</p>
+    <div class="formc">
+        <button class="butt" type="submit" onclick="event.preventDefault()">Submit</button>
+      
+    </div> -->  </div>
+    <div>
+        <button class="butt" type="submit" onclick="event.preventDefault().document.getElementById('formc').style.display='block'">hehe</button>
+    </div>

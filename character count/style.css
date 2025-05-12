@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    background-image: url(/image/tobi-iphone-d5g3pabg4n7jrutl.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+textarea{
+    background-color: transparent;
+    color: gold;
+    
+}
+textarea::placeholder{
+    color: gold;
+}
+.count{
+    color: gold;
+}

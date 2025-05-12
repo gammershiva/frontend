@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+}
+.main{
+width: 50%;
+height: 40%;
+border-radius: 50px;
+
+background-color: antiquewhite;
+
+}
+
+input{
+    width: 40%;
+    font-size: 30px;
+    margin: 10px;
+    text-align: center;
+}
+header{
+    font-size: 30px;
+
+}
+button{
+    font-size: xx-large;
+    padding: 10px;
+    border-radius: 20px;
+    row-gap: 20px;
+}
