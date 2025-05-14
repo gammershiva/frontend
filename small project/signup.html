@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://i.redd.it/vzmdu1sl9m2d1.jpeg);
+        background-color:black;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+
+    }
+    .main{
+        text-align: center;
+        font-size: xx-large;
+        padding: 50px;
+        margin: 50px;
+       
+        
+    }
+    h2{
+        font-size: 50px;
+        font-weight: 500px;
+
+    }
+    input{
+        width: 100%;
+        height: 50px;
+        background-color: transparent;
+        text-align: center;
+        font-size: xx-large;
+
+    }
+    button{
+        font-size: 2rem;
+        background-color: transparent;
+        border: none;
+    }
+    a{
+        text-decoration: none;
+        font-size: large;
+        color:black;
+        font-size: xx-large;
+    }
+    a:hover{
+        background-color: gold;
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="main">
+        <div><h2>Signup</h2></div>
+        <div class="form"> 
+            <form >
+                <div>
+                    <label >Full Name</label>
+                    <input id="name" type="text" placeholder="enter your full name">
+                </div>
+                <div>
+                    <label >Email</label>
+                    <input id="email" type="email" placeholder="enter your email">
+
+                </div>
+                <div>
+                    <label> username</label>
+                    <input id="username" type="text" placeholder="enter your user name">
+                </div>
+                <div>
+                    <label>password</label>
+                    <input id="password" type="password" placeholder="enter a password">
+
+                </div>
+                <div>
+                <label> Conform password</label>
+                <input id="repassword" type="password" placeholder=" rewrite password"> 
+                </div>
+                <p id="passc" style="color: gold;"></p>
+                <div style="margin-top: 20px;">
+                    <button onclick="signups(event)">Signup</button>
+                     <button onclick="reset()">reset</button>
+                </div>
+        </form>
+          <p id="std" style="color:gold;"> </p>
+     <p  style="color:blue;">Do not have a acccount. <span><a href="/small project/logform.html">Login..</a></span></p>
+    </div>
+
+    </div>
+    <script>
+       
+        let signups=(event)=>{
+             event.preventDefault()
+            let a=document.getElementById("name").value;
+            let b=document.getElementById("email").value;
+            let c=document.getElementById("username").value;
+            let d=document.getElementById("password").value;
+            let e=document.getElementById("repassword").value;
+          if (a!=="" && b!=="" && c!=="" && d!=="" && e!=="") {
+            if (d===e) {
+                  alert(`${a},completed`)
+                document.getElementById("std").textContent="sucessyfully sumited"
+              
+                
+            } else {
+                document.getElementById("passc").textContent="password miss match"
+                
+                
+            }
+            
+          } else {
+            document.getElementById("std").textContent="please fill the requiremant"
+            
+          }
+        }
+        let reset=()=>{
+            document.getElementById(passc)
+        }
+
+    </script>
+</body>
+</html>
