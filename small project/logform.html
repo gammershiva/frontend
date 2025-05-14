@@ -62,26 +62,36 @@
             <input type="password" id="pass">
         </div>
         <div>
-            <button onclick="login()">Login</button>
-            <button type="reset">reset</button>
+            <button onclick="login(event)">Login</button>
+            <button onclick="res">reset</button>
 
         </div>
     </form>
-     <p id="std" style="color:blue;">Do not have a acccount. <span><a href="#">Sing up..?</a></span></p>
+    <p id="std" style="color: blue;"> </p>
+     <p  style="color:blue;">Do not have a acccount. <span><a href="#">Sing up..?</a></span></p>
     </div>
    
 <script>
-    let login=()=>{
+    let login=(event)=>{
+         event.preventDefault();
         let a=document.getElementById("user").value;
         let b=document.getElementById("pass").value;
         if (a!=="" && b!=="") {
             alert(`${a},successyfully log`)
+            document.getElementById("std").textContent = "sucessfully login";
+
             
         } else {
-            document.getElementById("std").textContent="please enter the value"
-            
+         
+    document.getElementById("std").textContent = "Please enter the value";
+
+
         }
 
+    }
+    let res=()=>{
+         document.getElementById("std").textContent = "";
+        
     }
 
 </script>
