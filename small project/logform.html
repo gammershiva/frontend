@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(https://i.redd.it/vzmdu1sl9m2d1.jpeg);
+        background-color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main{
+        font-size: xx-large;
+        padding: 50px;
+        margin: 30px;
+        text-align: center;
+    }
+    input{
+        background-color: transparent;
+        color:whitesmoke;
+        font-size: xx-large;
+        padding: 10px;
+        width: 100%;
+    }
+    button{
+        font-size: xx-large;
+        background-color: transparent;
+        width: 50%;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        font-size: large;
+        color:black;
+        font-size: xx-large;
+    }
+    a:hover{
+        background-color: gold;
+        text-decoration: underline;
+    }
+</style>
+<body>
+      <div class="main">
+        <div><h2>Login</h2></div>
+        <form class="form" >
+        <div>
+            <label >username</label>
+            <input type="text" id="user">
+        </div>
+        <div>
+            <label >password</label>
+            <input type="password" id="pass">
+        </div>
+        <div>
+            <button onclick="login()">Login</button>
+            <button type="reset">reset</button>
+
+        </div>
+    </form>
+     <p id="std" style="color:blue;">Do not have a acccount. <span><a href="#">Sing up..?</a></span></p>
+    </div>
+   
+<script>
+    let login=()=>{
+        let a=document.getElementById("user").value;
+        let b=document.getElementById("pass").value;
+        if (a!=="" && b!=="") {
+            alert(`${a},successyfully log`)
+            
+        } else {
+            document.getElementById("std").textContent="please enter the value"
+            
+        }
+
+    }
+
+</script>
+</body>
+</html>
