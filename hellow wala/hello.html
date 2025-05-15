@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellow
+    </title>
+</head>
+<style>
+
+</style>
+<body>
+    <div>
+        <div>
+        <h1>do you want to look something then </h1></div>
+        <div>
+            <input id="say" type="text" placeholder="enter your name for suprise">
+            <button onclick="hehe()">sumit</button>
+        </div>
+        <p id="he"></p>
+
+    </div>
+<script>
+    let hehe=()=>{
+        let a = document.getElementById("say").value;
+        document.getElementById("he").textContent=`congrats,${a},..........;`
+    }
+</script>
+    
+</body>
+</html>
